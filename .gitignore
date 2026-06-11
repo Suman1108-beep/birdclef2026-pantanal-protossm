@@ -1,0 +1,31 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.tmp
+
+# Large ML artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.npy
+*.npz
+*.nii
+*.nii.gz
+*.parquet
+*.csv
+*.zip
+
+# Generated outputs
+outputs/
+predictions_raw/
+predictions_postprocessed/
+nnUNet_raw/
+nnUNet_preprocessed/
+nnUNet_results/
