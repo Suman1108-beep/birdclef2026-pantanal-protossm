@@ -23,3 +23,11 @@ validation.
 
 - OOF baseline AUC logged in notebook: `0.8032`
 - Challenge submission shape logged in notebook: `240 x 235`
+
+## AWS / SageMaker Deployment Path
+
+- Store soundscape batches and Perch feature caches in S3.
+- Package inference as an ECR image for SageMaker Batch Transform.
+- Emit submission artifacts back to S3 with run metadata.
+- Track validation AUC, per-taxon thresholds, latency, and failed audio reads
+  through CloudWatch/SageMaker job logs.
